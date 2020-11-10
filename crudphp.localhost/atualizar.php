@@ -42,6 +42,6 @@ require_once 'vendor/autoload.php';
     $produtoDao = new \App\Model\ProdutoDao();
     $produtoDao->update($produto);
 
-    //header('Location: configuracao.php'); 
+    header('Location: configuracao.php'); 
 
     //FIM MÉTODO UPDATE()==================================

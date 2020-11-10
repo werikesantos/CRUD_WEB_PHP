@@ -69,8 +69,8 @@
                             echo "<td><input type='text' name='confEndereco' placeholder='$endereco'></td>";
                             echo "<td><input type='text' name='confEmail' placeholder='$email'></td>";
                             echo "<td><input type='text' name='confCelular' placeholder='$celular'></td>";
-                            echo "<td><input type='submit' value='Editar' class='button'></td>"; 
-                            echo "<td><input type='submit' value='Deletar' class='button'></td>";                        
+                            echo "<td><input class='botao2' type='submit' value='Editar' class='button'></td>"; 
+                            echo "<td><input formaction='deletar.php' class='botao2' type='submit' value='Deletar' class='button'></td>";                        
                         echo "</tr>";
                     echo "</form>";
 
@@ -80,7 +80,7 @@
             
         </table>
 
-        <div class="botao1">
+        <div class="botao3">
             <a href="index.html" >
             <button >Voltar</button>
             </a>
