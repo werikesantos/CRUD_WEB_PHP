@@ -1,0 +1,23 @@
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}
+
+"psr-4" >> É O PADRÃO DE CARREGAMENTO
+
+"App\\": "App/" >> TUDO O QUE ESTIVER DENTRO DO DIRETÓRIO '"App/"' VAI SER CARREGADO AUTOMATICAMENTE.
+
+DEPOIS DISSO EXECUTE O COMANDO ABAIXO DENTRO DO SEU PROJETO, VEJA O EXEMPLO ABAIXO:
+
+cd C:\Users\werik\Desktop\CRUD_PHP
+
+comando:
+
+- composer dump-autoload
+
+VEJA QUE NO CAMINHO ABAIXO FOI GERADO O ARQUIVO COM O ARRAY:
+
+C:\Users\werik\Desktop\CRUD_PHP\vendor\composer\autoload_psr4.php

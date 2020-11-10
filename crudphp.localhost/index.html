@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>CRUD</title>
+
+</head>
+
+<body>
+
+    <div class="cabeca">
+
+        <h1>CADASTRAR</h1>
+
+    </div>
+
+    <!--GET = USADO QUANDO DESEJA OBTER UMA BUSCA DE DADOS-->
+    <!--POST = USADO QUANDO DESEJA UM ENVIO DE DADOS-->
+    <div class="total">
+
+        <form class="fundo" action="cadastrar.php" method="POST">
+            
+           <div class="conteudo">
+
+                <!--A TAG 'label' É UTILIZADA PARA DAR UM TITULO AO 'input'-->
+                <label for="name">Nome:</label>
+
+                <!--PARA ENTRADAS DE DADOS SE UTILIZA A TAG 'input'-->
+                <input type="text" name="nome" placeholder="Insira o seu nome">
+                
+                <label for="name">Nascimento:</label>
+
+                <input type="text" name="dataNascimento" placeholder="Insira a data"><!--yyyy-mm-dd-->
+
+                <label for="name">Endereço:</label>
+
+                <input type="text" name="endereco" placeholder="Insira o endereço">
+
+                <label for="name">E-Mail:</label>
+
+                <input type="text" name="email" placeholder="Insira seu E-Mail">
+
+                <label for="name">Telefone:</label>
+
+                <input type="text" name="celular" placeholder="Insira o número">
+
+                <input type="submit" class="button">
+
+            </div>
+        
+        </form> 
+
+        <div class="botao">
+            <a href="configuracao.php">
+                <button>Configurar</button>
+            </a>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

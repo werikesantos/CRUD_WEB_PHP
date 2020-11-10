@@ -1,0 +1,67 @@
+VIDEO TUTORIAL:
+
+https://www.youtube.com/watch?v=aANESnxLUK0&list=PLwXQLZ3FdTVEau55kNj_zLgpXL4JZUg8I&index=22
+
+*DENTRO DO PROJETO ABERTO NO TERMINAL, DIGITE O COMANDO ABAIXO PARA INICIAR:
+
+- composer init
+
+=============================================================================
+
+*FAZENDO UM DONWLOAD DE UMA BIBLIOTECA PELO COMPOSER ACESSANDO O SITE ABAIXO:
+
+https://packagist.org/
+
+DEPOIS DE ESCOLHER A BIBLIOTECA, BASTA DIGITAR O COMANDO ABAIXO COMO EXEMPLO:
+
+- composer require pagseguro/pagseguro-php-sdk
+
+=============================================================================
+
+*APAGANDO UMA BIBLIOTECA:
+
+DENTRO DO ARQUIVO 'composer.json' TEM UM MÉTODO "require":{}
+ESOLHA A BIBLIOTECA QUE DESEJA DELETAR E NO PROMPT DIGITE O COMANDO ABAIXO:
+
+- composer update
+
+=============================================================================
+
+*INSTALANDO UMA DEPENDENCIA
+
+ACESSAR O SITE ABAIXO E ESCOLHER A BIBLIOTECA, PEGANDO O NOME DELA E A SUA VERSÃO.
+
+DENTRO DO ARQUIVO 'composer.json' DECLARE ESSAS INFORMAÇÕES DENTRO DA ESTRUTURA PADRÃO:
+
+{
+	"require": {
+		"nomedabiblioteca" : "versaodabiblioteca_somentenumero"
+	}
+}
+
+DEPOIS DISSO NO TEMINAL DIGITE O COMANDO ABAIXO PARA INSTALAR:
+
+- composer install
+
+=============================================================================
+
+*IMPORTANTE!!!!!!
+COMO CARREGAR TODAS AS CLASSES PELO COMPOSER???
+
+DENTRO DO ARQUIVO 'index.php' DIGITE O COMANDO ABAIXO:
+
+- require_once 'vendor/autoload.php'
+
+ATENÇÃO!!!
+VEJA QUE ESTA SENDO CARREGADO SOMENTE AS CLASSES QUE ESTÃO DENTRO DO ARQUIVO 'vendor'
+
+=============================================================================
+* COMO UTILIZAR A BIBLIOTECA?
+
+SEGUIR AS INTRUÇÕES DA BIBLIOTECA DESCRITAS NO SITE
+
+ABAIXO DO COMANDO ABAIXO COLOQUE O COMANDO DESCRITO ABAIXO 'use':
+
+- require_once 'vendor/autoload.php'
+
+- use Cocur\Slugify\Slugify;
