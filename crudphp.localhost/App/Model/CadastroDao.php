@@ -3,9 +3,9 @@
     //ESTUDAR O FUNCIONAMENTO DO 'NAMESPACE' E 'AUTOLOAD'
     namespace App\Model;
 
-    class ProdutoDao{
+    class CadastroDao{
 
-        public function create(Produto $p){
+        public function create(Cadastro $p){
             
             //'produtos' É A MINHA TABELA DENTRO DO BANCO 'pdo'
             $sql = 'INSERT INTO crudweb(nome, dataNascimento, endereco, email, celular, id) VALUES (?, ?, ?, ?, ?, ?)';
@@ -62,7 +62,7 @@
             
         }
 
-        public function update(Produto $p){
+        public function update(Cadastro $p){
 
             $id = $p->getId();
 

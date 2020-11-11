@@ -20,14 +20,14 @@ require_once 'vendor/autoload.php';
         echo"$confCelular";
     */
 
-    $produto = new \App\Model\Produto();
+    $cadastro = new \App\Model\Cadastro();
 
-    $produto->setId($confId);
-    $produto->setNome($confNome);
-    $produto->setDataNascimento($confData);
-    $produto->setEndereco($confEndereco);
-    $produto->setEmail($confEmail);
-    $produto->setCelular($confCelular);
+    $cadastro->setId($confId);
+    $cadastro->setNome($confNome);
+    $cadastro->setDataNascimento($confData);
+    $cadastro->setEndereco($confEndereco);
+    $cadastro->setEmail($confEmail);
+    $cadastro->setCelular($confCelular);
     
     /*// TESTANDO OBJETO - OK
         echo '<br>';
@@ -39,8 +39,8 @@ require_once 'vendor/autoload.php';
         echo $produto->getCelular($confCelular);
     */
 
-    $produtoDao = new \App\Model\ProdutoDao();
-    $produtoDao->update($produto);
+    $cadastroDao = new \App\Model\CadastroDao();
+    $cadastroDao->update($cadastro);
 
     header('Location: configuracao.php'); 
 

@@ -3,7 +3,7 @@
     //ESTUDAR O FUNCIONAMENTO DO 'NAMESPACE' E 'AUTOLOAD'
     namespace App\Model;
 
-    class Produto{
+    class Cadastro{
 
         /* ctrl+shift+P
            SELECIONA OS ATRIBUTOS

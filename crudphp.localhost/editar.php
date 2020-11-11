@@ -49,16 +49,16 @@
 
                 require_once 'vendor/autoload.php';
 
-                $produtoDao = new \App\Model\ProdutoDao();
+                $cadastroDao = new \App\Model\CadastroDao();
 
-                foreach($produtoDao->read() as $produto):
+                foreach($cadastroDao->read() as $Cadastro):
 
-                    $id = $produto['id'];
-                    $nome = $produto['nome'];
-                    $data = $produto['dataNascimento'];
-                    $endereco = $produto['endereco'];
-                    $email = $produto['email'];
-                    $celular = $produto['celular'];
+                    $id = $cadastro['id'];
+                    $nome = $cadastro['nome'];
+                    $data = $cadastro['dataNascimento'];
+                    $endereco = $cadastro['endereco'];
+                    $email = $cadastro['email'];
+                    $celular = $cadastro['celular'];
                     
                     echo "<tbody>"; 
 

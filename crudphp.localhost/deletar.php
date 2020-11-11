@@ -4,14 +4,14 @@ require_once 'vendor/autoload.php';
 
     $confId = $_POST['confId'];
 
-    $produto = new \App\Model\Produto();
+    $cadastro = new \App\Model\Cadastro();
 
-    $produto->setId($confId);
-    $id = $produto->getId();
+    $cadastro->setId($confId);
+    $id = $cadastro->getId();
 
-    $produtoDao = new \App\Model\ProdutoDao();
+    $cadastroDao = new \App\Model\CadastroDao();
 
-    $produtoDao->delete($id);
+    $cadastroDao->delete($id);
 
     header('Location: configuracao.php'); 
 

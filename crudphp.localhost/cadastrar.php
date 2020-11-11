@@ -17,15 +17,15 @@ require_once 'vendor/autoload.php';
         echo"$email";
         echo"$celular"; 
 
-        $produto = new \App\Model\Produto();
-        $produto->setNome($nome);
-        $produto->setDataNascimento($dataNascimento);
-        $produto->setEndereco($endereco);
-        $produto->setEmail($email);
-        $produto->setCelular($celular);
+        $cadastro = new \App\Model\Cadastro();
+        $cadastro->setNome($nome);
+        $cadastro->setDataNascimento($dataNascimento);
+        $cadastro->setEndereco($endereco);
+        $cadastro->setEmail($email);
+        $cadastro->setCelular($celular);
 
-        $produtoDao = new \App\Model\ProdutoDao();
-        $produtoDao->create($produto); 
+        $cadastroDao = new \App\Model\CadastroDao();
+        $cadastroDao->create($cadastro); 
 
         //DEPOIS DE EXECUTAR OS COMANDO ACIMA ELE VAI RETORNAR A PÁGINA DESTINO INFORMADA ABAIXO.
         header('Location: index.html');  
